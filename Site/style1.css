@@ -1,0 +1,25 @@
+body {
+    background-image: url(../Img/BackgroundChina.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    height: 100%;
+    width: 99%;
+    
+    
+}
+#text {
+    opacity: 0.9;
+    width: 700px;
+    border-radius: 30px;
+    text-align: center;
+    background: rgba(25,28,14,0.5);
+   margin:auto;
+    
+}
+#contacts {
+  
+
+}

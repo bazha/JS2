@@ -1,0 +1,37 @@
+
+
+figure img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+    float: left;
+   
+}
+body{
+    background-image: url(../Img/marmoleda_mountain_reflections-2560x1440.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    height: 100%;
+    width: 99%;
+}
+#midlle{
+    opacity: 0.8;
+    float:center;
+    background-color: lightgray;
+    width: 600px;
+    border-radius: 28px;
+    text-align: center;
+    margin: auto;
+    background: rgba(30,18,24,0.6);
+    
+}
+#contacts {
+    width: 600px;
+    margin: auto;
+    
+}
+
