@@ -1,0 +1,129 @@
+<!DOCTYPE>
+<html>
+<HEAD>
+<meta charset utf-8>
+<title>Калькулятор </title>
+<link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/accessories-calculator-256.png" type="image/x-icon">	
+</head>
+<body>
+
+<img src = " https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/accessories-calculator-256.png "> 
+
+
+<p> Число 1: <input type="text" id="n1"> </p>
+<p> Число 2: <input type="text" id="n2"> </p>
+<p> Число 3: <input type="text" id="n3"> </p>
+<p>
+<button onclick="plus()">Сложить</button>
+<button onclick="minus()">Вычесть</button>
+<button onclick="umn()">Умножить</button>
+<button onclick="raz()">Разделить</button>
+<hr>
+<b><p id="out"> Результат </p></b>
+
+<script> 
+ function plus() {
+ var num1,num2, num3,result;
+  
+  num1 = document.getElementById('n1').value;
+  num1 = parseInt(num1);
+
+  num2 = document.getElementById('n2').value;
+  num2 = parseInt(num2);
+  
+  num3 = document.getElementById('n3').value;
+  num3 = parseInt(num3);
+ 
+  result= num1+num2+num3;
+
+  document.getElementById('out').innerHTML = result
+}
+ function minus() {
+  
+  var num1,num2,num3,result;
+  
+  num1 = document.getElementById('n1').value;
+  num2 = parseInt(num2);   
+
+  num2 = document.getElementById('n2').value;
+  num2 = parseInt(num2);
+
+  num3 = document.getElementById('n3').value;
+  num3 = parseInt(num3);
+
+  result = num1- num2-num3;
+  
+  document.getElementById('out').innerHTML = result
+ 
+}
+
+ function umn() {
+ var num1,num2,num3,result;
+
+ num1 = document.getElementById('n1').value;
+ num1 = parseInt(num1);
+
+ num2 = document.getElementById('n2').value;
+ num2 = parseInt(num2);
+ 
+ num3 = document.getElementById('n3').value;
+ num3 = parseInt(num3);
+
+ result = num1*num2*num3;
+ 
+ document.getElementById('out').innerHTML = result
+ }
+
+ function raz() {
+ var num1,num2,result;
+ 
+ num1 = document.getElementById('n1').value;
+ num1 = parseInt(num1);
+
+ num2 = document.getElementById('n2').value;
+ num2 = parseInt(num2);
+ 
+ num3 = document.getElementById('n3').value;
+ num3 = parseInt(num3);
+
+ result = num1/num2/num3;
+
+ document.getElementById('out').innerHTML = result
+ }  
+ 
+</script> 
+<style>
+body {
+background: url(https://s1.1zoom.ru/big0/930/Coast_Sunrises_and_sunsets_Waves_USA_Ocean_Kaneohe_521540_1280x775.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment:fixed;
+color:white;
+height: 100%;
+width: 100%;
+}
+p {
+ font-size: 130%;
+}
+#out {
+font-size: 150%;
+}
+button {
+font-size : 120%;
+color: #745125;
+cursor: pointer;
+border: 200px;
+}
+#n1 {
+padding: 5px;
+}
+#n2 {
+padding: 5px;
+}
+#n3 {
+padding: 5px;
+}
+</style> 
+</body>
+</html>
